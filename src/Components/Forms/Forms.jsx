@@ -1,4 +1,6 @@
 import React from 'react';
+import './forms.css'
+
 import {
   MDBBtn,
   MDBContainer,
