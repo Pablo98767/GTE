@@ -2,64 +2,30 @@ import React from 'react';
 import {
   MDBBtn,
   MDBContainer,
-  MDBRow,
-  MDBCol,
   MDBCard,
   MDBCardBody,
-  MDBCardImage,
   MDBInput,
-  MDBIcon,
   MDBCheckbox
 }
 from 'mdb-react-ui-kit';
 
 function App() {
   return (
-    <MDBContainer fluid>
-
-      <MDBCard className='text-black m-5' style={{borderRadius: '25px'}}>
-        <MDBCardBody>
-          <MDBRow>
-            <MDBCol md='10' lg='6' className='order-2 order-lg-1 d-flex flex-column align-items-center'>
-
-              <p classNAme="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-
-              <div className="d-flex flex-row align-items-center mb-4 ">
-                <MDBIcon fas icon="user me-3" size='lg'/>
-                <MDBInput label='Your Name' id='form1' type='text' className='w-100'/>
-              </div>
-
-              <div className="d-flex flex-row align-items-center mb-4">
-                <MDBIcon fas icon="envelope me-3" size='lg'/>
-                <MDBInput label='Your Email' id='form2' type='email'/>
-              </div>
-
-              <div className="d-flex flex-row align-items-center mb-4">
-                <MDBIcon fas icon="lock me-3" size='lg'/>
-                <MDBInput label='Password' id='form3' type='password'/>
-              </div>
-
-              <div className="d-flex flex-row align-items-center mb-4">
-                <MDBIcon fas icon="key me-3" size='lg'/>
-                <MDBInput label='Repeat your password' id='form4' type='password'/>
-              </div>
-
-              <div className='mb-4'>
-                <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Subscribe to our newsletter' />
-              </div>
-
-              <MDBBtn className='mb-4' size='lg'>Register</MDBBtn>
-
-            </MDBCol>
-
-            <MDBCol md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center'>
-              <MDBCardImage src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp' fluid/>
-            </MDBCol>
-
-          </MDBRow>
+    <MDBContainer fluid className='d-flex align-items-center justify-content-center bg-image' style={{backgroundImage: 'url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp)'}}>
+      <div className='mask gradient-custom-3'></div>
+      <MDBCard className='m-5' style={{maxWidth: '600px'}}>
+        <MDBCardBody className='px-5'>
+          <h2 className="text-uppercase text-center mb-5">Create an account</h2>
+          <MDBInput wrapperClass='mb-4' label='Your Name' size='lg' id='form1' type='text'/>
+          <MDBInput wrapperClass='mb-4' label='Your Email' size='lg' id='form2' type='email'/>
+          <MDBInput wrapperClass='mb-4' label='Password' size='lg' id='form3' type='password'/>
+          <MDBInput wrapperClass='mb-4' label='Repeat your password' size='lg' id='form4' type='password'/>
+          <div className='d-flex flex-row justify-content-center mb-4'>
+            <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I agree all statements in Terms of service' />
+          </div>
+          <MDBBtn className='mb-4 w-100 gradient-custom-4' size='lg'>Register</MDBBtn>
         </MDBCardBody>
       </MDBCard>
-
     </MDBContainer>
   );
 }
