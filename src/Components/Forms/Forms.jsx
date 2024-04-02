@@ -53,7 +53,7 @@ function App() {
             </MDBCol>
 
             <MDBCol md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center'>
-              <MDBCardImage src='https://cdn-icons-png.flaticon.com/512/174/174237.png' fluid/>
+               //Colocar esta parte na direita, e depois adicionar a imagen da logo, o titulo e os paragros conforme o exemplo no FIGMA 
             </MDBCol>
 
           </MDBRow>
