@@ -51,7 +51,7 @@ function App() {
                 <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Subscribe to our newsletter' />
               </div>
 
-              <MDBBtn className='mb-4' size='lg'>Register</MDBBtn>
+              <MDBBtn className='mb-4 btn-warning' size='lg'>Register</MDBBtn>
 
             </MDBCol>
 
