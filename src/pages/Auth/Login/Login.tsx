@@ -2,30 +2,29 @@ import * as S from './styles';
 import { useAuth } from '../../../hooks/AuthProvider';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
-
 import { Button } from '@mui/material';
-
 import { Brand } from '../../../components/Brand';
 import { Input } from '../../../components/Input';
-
 import * as Utils from '../../../utils/interfaces';
-
 import { theme } from '../../../styles/theme';
-
 import { useNavigate } from 'react-router-dom';
-
 import logo from '@/assets/images/bus_image.jpeg';
+
+
+
 
 export function Login() {
   const { signIn } = useAuth();
   const navigate = useNavigate();
 
   const company = {
-    name: 'foodExplorer',
+    name: 'GTE',
     logoUrl: logo,
     width: 50,
     height: 50,
   };
+
+
 
   const validationSchema = yup.object({
     email: yup
@@ -56,32 +55,35 @@ export function Login() {
   return (
     <S.Container>
       <S.Content>
-        <S.BrandCard >
+        <S.BrandCard>
           <Brand
-            style={
-              {
-                fontSize: 37.243,
-              }
-            }
-            company={ company }
-          />
+               
+
+            style={{
+              fontSize: 37.243,
+              marginTop: -500,
+              marginLeft: -100,
+            }}
+            company={company}
+           
+
+             />
         </S.BrandCard>
-        <S.FormCard >
+        <h1 style={{marginLeft:-450}}> O melhor App para gestão de transporte escolar.</h1>
+        <S.FormCard>
           <S.Form
             onSubmit={formik.handleSubmit}
           >
             <h1
-              style={
-                {
-                  color: theme.foodExplorer.light[100],
-                  fontSize: 32,
-                  fontWeight: 500,
-                  marginBottom: 24,
-                  textAlign: 'center',
-                }
-              }
+              style={{
+                color: theme.foodExplorer.light[100],
+                fontSize: 32,
+                fontWeight: 500,
+                marginBottom: 24,
+                textAlign: 'center',
+              }}
             >
-              Faça login
+              Seja bem vindo!
             </h1>
             <Input
               onChange={formik.handleChange}
@@ -93,8 +95,7 @@ export function Login() {
               required
               id="email"
               label="Email"
-              placeholder='Exemplo: exemplo@exemplo.com.br'
-            />
+              placeholder='Exemplo: exemplo@exemplo.com.br' />
             <Input
               onChange={formik.handleChange}
               value={formik.values.password}
@@ -105,19 +106,16 @@ export function Login() {
               id="password"
               label="Senha"
               type="password"
-              placeholder='No mínimo 6 caracteres'
-            />
+              placeholder='No mínimo 6 caracteres' />
             <Button
               fullWidth
               size="large"
               variant="contained"
               type="submit"
-              style={
-                { 
-                  backgroundColor: theme.foodExplorer.tints.tomato[100], 
-                  textTransform: 'none',
-                }
-              }
+              style={{
+                backgroundColor: theme.foodExplorer.tints.tomato[300],
+                textTransform: 'none',
+              }}
             >
               Entrar
             </Button>
@@ -126,11 +124,10 @@ export function Login() {
               size="small"
               variant="text"
               onClick={() => navigate('/signup')}
-              style={
-                { 
-                  color: theme.foodExplorer.light[100],
-                  textTransform: 'none',
-                }}
+              style={{
+                color: theme.foodExplorer.light[100],
+                textTransform: 'none',
+              }}
             >
               Criar uma conta
             </Button>
