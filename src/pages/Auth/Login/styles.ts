@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color:#FFFFF;
 `;
 
 export const Content = styled.div`
@@ -48,6 +49,7 @@ export const FormCard = styled.div`
 
   width: 100%;
   height: auto;
+  background-color:#FFFFF;
 
   @media screen and (min-width: 768px) {
     background: none;
