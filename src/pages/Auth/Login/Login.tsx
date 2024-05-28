@@ -20,8 +20,8 @@ export function Login() {
   const company = {
     name: 'GTE',
     logoUrl: logo,
-    width: 50,
-    height: 50,
+    width: 200,
+    height: 200,
   };
 
 
@@ -53,7 +53,9 @@ export function Login() {
   });
 
   return (
-    <S.Container>
+    <S.Container   style={{
+      backgroundColor: theme.foodExplorer.light[100],
+    }}>
       <S.Content>
         <S.BrandCard>
           <Brand
@@ -69,11 +71,17 @@ export function Login() {
 
              />
         </S.BrandCard>
-        <h1 style={{marginLeft:-450}}> O melhor App para gestão de transporte escolar.</h1>
-        <S.FormCard>
-          <S.Form
+        <h1 style={{marginLeft:-450, color: theme.foodExplorer.dark[100]}}> O melhor App para gestão de transporte escolar.</h1>
+        <S.FormCard   style={{
+                backgroundColor: theme.foodExplorer.tints.tomato[300],
+              }}>
+          <S.Form 
             onSubmit={formik.handleSubmit}
-          >
+             style={{
+                backgroundColor: theme.foodExplorer.tints.tomato[300],
+            }}>
+            
+          
             <h1
               style={{
                 color: theme.foodExplorer.light[100],
