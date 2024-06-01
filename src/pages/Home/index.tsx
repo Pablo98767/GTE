@@ -63,8 +63,6 @@ export function Home() {
         : '[]'
     )
   );
-  const [favorites, setFavorites] = useState<Utils.dishProps[]>([]);
-  // const [isShowHints, setIsShowHints] = useState<boolean>(false);
 
   const state = {
     stepsEnabled: isStartTour,
@@ -89,7 +87,6 @@ export function Home() {
           'Chegamos ao ponto final desta estapa.<br><br>Obrigado por me acompanhar até aqui!',
       },
     ],
-    // hintsEnabled: isShowHints,
     hintsEnabled: false,
     hints: [
       {
@@ -111,43 +108,6 @@ export function Home() {
 
   function handleSideBarActions() {
     setIsSideBarOpened(!isSideBarOpened);
-  }
-
-  function handleClickFavorite(dishId: string | undefined) {
-    const isFavorite = favorites && favorites.find((dish) => dish.id === dishId); console.log(isFavorite)
-    if (isFavorite) {
-      const removeFavorite = isFavorite
-      const remainingFavorites = favorites.filter((dish) => dish.id !== dishId)
-
-      if (removeFavorite) {
-        const values = {
-          userId: user.id,
-          dishId: removeFavorite.id,
-        }
-        api.patch(`favorite/`, values).then(() => {
-          setFavorites(remainingFavorites)
-          localStorage.setItem('@food-explorer-backend:favorites', JSON.stringify(remainingFavorites))
-        }).catch((error) => {
-          console.error(error)
-          alert("Não foi possível realizar operação")
-        });
-      }
-    } else {
-      const addFavorite = dishes.find((dish: Utils.dishProps) => dish.id === dishId)
-      if (addFavorite) {
-        const values = {
-          userId: user.id,
-          dishId: addFavorite.id,
-        }
-        api.patch(`favorite/`, values).then(() => {
-          setFavorites([...favorites, addFavorite])
-          localStorage.setItem('@food-explorer-backend:favorites', JSON.stringify([...favorites, addFavorite]))
-        }).catch((error) => {
-          console.error(error)
-          alert("Não foi possível realizar operação")
-        });
-      }
-    }
   }
 
   function handleClickIncludeOrder(dishId: string | undefined, quantity: number) {
@@ -195,21 +155,6 @@ export function Home() {
   }
 
   useEffect(() => {
-    const userFavorites = JSON.parse(
-      localStorage.getItem('@food-explorer-backend:favorites')
-        ? (localStorage.getItem('@food-explorer-backend:favorites') as string)
-        : '[]'
-    );
-    if (userFavorites) {
-      setFavorites(
-        userFavorites
-      );
-    } else {
-      setFavorites([]);
-    }
-  }, []);
-
-  useEffect(() => {
     api.get('category/')
    .then((response) => {
         setCategories(response.data);
@@ -228,7 +173,6 @@ export function Home() {
         $opened={isSideBarOpened}
       >
         <Header
-          // onInputChange
           hasPermission={hasPermission}
           isMenuOpened={isMenuOpened}
           onClickMenu={handleClickMenu}
@@ -264,7 +208,6 @@ export function Home() {
             <IconButton
               onClick={() => {
                 setIsStartTour(true);
-                // setIsShowHints(true);
               }}
               color="primary"
             >
@@ -285,7 +228,6 @@ export function Home() {
             exitOnEsc: true,
             nextLabel: 'seguir',
             prevLabel: 'voltar',
-            // skipLabel: 'Skip',
             hidePrev: true,
             doneLabel: 'pronto',
             overlayOpacity: 0.5,
@@ -325,59 +267,6 @@ export function Home() {
                 >
                   <Banner />
                   <span style={{ height:'40px'}}></span>
-                  {
-                    !hasPermission &&
-                      <AppSection title="Favoritos">
-                        
-    <div className='swiper-container'>
-      <Swiper
-        slidesPerView={isDesktop ? 3 : 2}
-        spaceBetween={10}
-        loop={true}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        keyboard={{
-          enabled: true,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Keyboard, Navigation]}
-        className="mySwiper"
-      >
-          {
-              favorites && favorites.length === 0 ? (
-                <h1 style={{ color: '#fff' }}>Nenhum favorito encontrado</h1>
-              ) : (
-                favorites.map((item: Utils.dishProps, index: number) => (
-                  <SwiperSlide
-                    key={index}
-                  >
-                    <DishCard
-                      key={index}
-                      props={{
-                        hasPermission: hasPermission,
-                        dishId: item?.id,
-                        dishName: item?.name,
-                        dishPrice: item?.price,
-                        dishImage: item?.image ? `${api.defaults.baseURL}/files/${item.image}` : logo,
-                        onClickFavorite: handleClickFavorite,
-                        onClickIncludeOrder: handleClickIncludeOrder,
-                        isFavorite: true,
-                      }}
-                    />
-                  </SwiperSlide>
-                ))
-              )
-            }
-      </Swiper>
-    </ div>
-                      </AppSection>
-                    }
                     {
                       categories.map((category: Utils.categoryProps, index: number) => {
                         return (
@@ -400,7 +289,6 @@ export function Home() {
                       {
                         category.dishes.map((item, index: number) => {
                           if (!item.dish.isActive) return;
-                          const isFavorite = favorites.find((dish) => dish.id === item.dishId) ? true : false;
                           return (
                             <SwiperSlide
                               key={index}
@@ -413,9 +301,7 @@ export function Home() {
                                   dishName: item?.dish.name,
                                   dishPrice: item?.dish.price,
                                   dishImage: item?.dish.image ? `${api.defaults.baseURL}/files/${item.dish.image}` : logo,
-                                  onClickFavorite: handleClickFavorite,
                                   onClickIncludeOrder: handleClickIncludeOrder,
-                                  isFavorite: isFavorite,
                                 }}
                               />
                             </SwiperSlide>
