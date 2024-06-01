@@ -23,10 +23,12 @@ export const Content = styled.div`
 
 export const Rectangle = styled.div`
 
-    width: 100%;
+    width: 35%;
     height: 120px;
     background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
     border-radius: 4px;
+    margin-left: -160px;
+    
 
     position: absolute;
     top: 44px;
@@ -37,6 +39,116 @@ export const Rectangle = styled.div`
         height: max(120px, 11vw);
     }
 `;
+
+export const RectangleCard1 = styled.div`
+
+    width: 35%;
+    height: 120px;
+    background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
+    border-radius: 4px;
+    margin-left: 280px;
+    
+    
+
+    position: absolute;
+    top: 44px;
+    left: 20px;
+    z-index: -1;
+
+    @media screen and (min-width: 768px) {
+        height: max(120px, 11vw);
+    }
+`;
+
+export const RectangleCard2 = styled.div`
+
+    width: 35%;
+    height: 120px;
+    background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
+    border-radius: 4px;
+    margin-top: 280px;
+    margin-left:-158px;
+    
+    
+
+    position: absolute;
+    top: 44px;
+    left: 20px;
+    z-index: -1;
+
+    @media screen and (min-width: 768px) {
+        height: max(120px, 11vw);
+    }
+`;
+
+
+export const RectangleCard3 = styled.div`
+
+    width: 35%;
+    height: 120px;
+    background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
+    border-radius: 4px;
+    margin-top: 280px;
+    margin-left: 280px;
+    
+    
+
+    position: absolute;
+    top: 44px;
+    left: 20px;
+    z-index: -1;
+
+    @media screen and (min-width: 768px) {
+        height: max(120px, 11vw);
+    }
+`;
+
+
+
+export const RectangleCard4 = styled.div`
+
+    width:43%;
+    height: 120px;
+    background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-left: 780px;
+    
+    
+
+    position: absolute;
+    top: 44px;
+    left: 20px;
+    z-index: -1;
+
+    @media screen and (min-width: 768px) {
+        height: max(120px, 11vw);
+    }
+`;
+
+export const RectangleCard5 = styled.div`
+
+    width:43%;
+    height: 120px;
+    background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
+    border-radius: 4px;
+    margin-top: 280px;
+    margin-left: 780px;
+    
+    
+
+    position: absolute;
+    top: 44px;
+    left: 20px;
+    z-index: -1;
+
+    @media screen and (min-width: 768px) {
+        height: max(120px, 11vw);
+    }
+`;
+
+
+
 
 export const TextContainer = styled.div`
     display: flex;
