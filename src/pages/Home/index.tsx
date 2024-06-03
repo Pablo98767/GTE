@@ -33,7 +33,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { Navigation, Keyboard, Autoplay } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 
 export function Home() {
   const { user } = useAuth();

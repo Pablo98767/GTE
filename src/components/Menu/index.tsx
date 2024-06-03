@@ -54,7 +54,7 @@ export function Menu(props: MenuProps) {
             navigateTo: '/new-dish',
           },
           {
-            title: 'Meus Favoritos',
+            title: 'My Favorites',
             icon: <ThumbUpAltIcon />,
             navigateTo: '/favorites',
           },
@@ -86,7 +86,7 @@ export function Menu(props: MenuProps) {
             navigateTo: '/',
           },
           {
-            title: 'Meus Favoritos',
+            title: 'My Favorites',
             icon: <ThumbUpAltIcon />,
             navigateTo: '/favorites',
           },

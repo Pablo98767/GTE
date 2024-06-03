@@ -119,6 +119,10 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
     navigate('/settings');
   };
 
+
+
+
+  //Criar mais itens neste menu na versão Desktop e Notbook.
   const items = hasPermission
   ? [
       {
@@ -126,28 +130,9 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
         icon: <HomeRounded />,
         navigateTo: '/',
       },
+
       {
-        title: 'Novo Prato',
-        icon: <RestaurantIcon />,
-        navigateTo: '/new-dish',
-      },
-      {
-        title: 'Meus Favoritos',
-        icon: <ThumbUpAltIcon />,
-        navigateTo: '/favorites',
-      },
-      {
-        title: 'Calendário',
-        icon: <CalendarMonthIcon />,
-        navigateTo: '/calendar',
-      },
-      {
-        title: 'Blog',
-        icon: <BookIcon />,
-        navigateTo: 'https://github.com/jakunzler',
-      },
-      {
-        title: 'Usuários',
+        title: 'Lista de Alunos',
         icon: <GroupIcon />,
         navigateTo: '/users',
       },
