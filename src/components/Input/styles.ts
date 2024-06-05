@@ -31,13 +31,13 @@ export const StyledLabel = styled.span<InputProps>(({ style, $isInvisible }) => 
 
     border: 'none',
     borderRadius: '0.25rem',
-    color: theme.foodExplorer.light[100],
+    color: theme.gte_platform.light[700],
 
     cursor: $isInvisible ? 'pointer' : 'default',
     margin: $isInvisible ? '16px auto 32px' : '0',
     padding: $isInvisible ? '16px' : '0',
     gap: $isInvisible ? '12px' : '0',
-    backgroundColor: $isInvisible ? theme.foodExplorer.dark[900] : 'transparent',
+    backgroundColor: $isInvisible ? theme.gte_platform.dark[900] : 'transparent',
 }));
 
 export const StyledTextField = styled(TextField)<InputProps>(({ style, $isInvisible }) => ({
@@ -49,10 +49,10 @@ export const StyledTextField = styled(TextField)<InputProps>(({ style, $isInvisi
     display: 'none',
   },
   '&:hover': {
-    backgroundColor: theme.foodExplorer.dark[100],
+    backgroundColor: theme.gte_platform.dark[100],
   },
   '& label': {
-    color: theme.foodExplorer.light[100],
+    color: theme.gte_platform.light[100],
     fontWeight: 'bold',
   },
   '& label.Mui-focused': {
@@ -61,16 +61,16 @@ export const StyledTextField = styled(TextField)<InputProps>(({ style, $isInvisi
   '& .MuiInputBase-root ': {
     border: 'none',
     borderRadius: '0.25rem',
-    color: theme.foodExplorer.light[100],
-    backgroundColor: theme.foodExplorer.dark[900],
+    color: theme.gte_platform.light[100],
+    backgroundColor: theme.gte_platform.dark[900],
   },
   '& .MuiInputBase-input': {
-    color: theme.foodExplorer.light[100],
+    color: theme.gte_platform.light[100],
     height: style && style.height,
   },
   '& .MuiInputBase-root.Mui-focused ': {
-    borderColor: theme.foodExplorer.dark[100],
-    boxShadow: `0 0 1.225em ${theme.foodExplorer.light[700]}`,
+    borderColor: theme.gte_platform.dark[100],
+    boxShadow: `0 0 1.225em ${theme.gte_platform.light[700]}`,
     border: 'none',
     borderRadius: '0.25rem',
     transition:

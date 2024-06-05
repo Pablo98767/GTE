@@ -249,12 +249,12 @@ export function Profile() {
                     sx={
                         {
                             textTransform: "none",
-                            color: theme.foodExplorer.light[100],
+                            color: theme.gte_platform.light[100],
                             width: 'fit-content',
                             margin: '0',
                             padding: '8px 16px 8px 8px',
 
-                            borderColor: theme.foodExplorer.light[100],
+                            borderColor: theme.gte_platform.light[100],
                         }
                     }
                     onClick={handleBack}

@@ -106,10 +106,9 @@ export function Header({
   const orderList = orderQuantity;
 
   const company = {
-    name: 'foodExplorer',
     logoUrl: logo,
-    width: 48,
-    height: 48,
+    width: 80,
+    height: 80,
   };
 
   const searchProps = {
@@ -251,7 +250,7 @@ export function Header({
                         sx={
                             {
                               textTransform: "none",
-                              color: theme.foodExplorer.light[100],
+                              color: theme.gte_platform.light[100],
                               width: 'calc(416px + 0.5vw)',
                               margin: '24px auto',
                               padding: '12px 36px',
@@ -268,7 +267,7 @@ export function Header({
                         sx={
                             {
                               textTransform: "none",
-                              color: theme.foodExplorer.light[100],
+                              color: theme.gte_platform.light[100],
                               width: 'calc(316px + 0.5vw)',
                               margin: '24px auto',
                               padding: '12px 36px',
@@ -285,8 +284,8 @@ export function Header({
                         sx={
                             {
                               textTransform: "none",
-                              backgroundColor: theme.foodExplorer.tints.tomato[100],
-                              color: theme.foodExplorer.light[100],
+                              backgroundColor: theme.gte_platform.tints.gold[100],
+                              color: theme.gte_platform.light[100],
                               width: 'calc(316px + 0.5vw)',
                               margin: '24px auto',
                               padding: '12px 36px',
@@ -327,19 +326,6 @@ export function Header({
                   ) : (
                     <div className='HeaderItems'>
                       <Brand style={{ fontSize: 21.163 }} company={ company }/>
-                      <div className="overlap">
-                        
-                        <ReceiptLongIcon
-                          cursor='pointer'
-                          onClick={() => alert('Funcionalidade em desenvolvimento!')}
-                          className='ProductsImage'
-                        />
-                        <span
-                          onClick={() => alert('Funcionalidade em desenvolvimento!')}
-                        >
-                          {orderList}
-                        </span>
-                      </div>
 
                       <div className="SearchBar">
                         <Search
@@ -352,7 +338,7 @@ export function Header({
                         sx={
                             {
                               textTransform: "none",
-                              color: theme.foodExplorer.light[100],
+                              color: theme.gte_platform.light[100],
                               width: 'calc(416px + 0.5vw)',
                               margin: '24px auto',
                               padding: '12px 36px',
@@ -369,7 +355,7 @@ export function Header({
                         sx={
                             {
                               textTransform: "none",
-                              color: theme.foodExplorer.light[100],
+                              color: theme.gte_platform.light[100],
                               width: 'calc(416px + 0.5vw)',
                               margin: '24px auto',
                               padding: '12px 36px',
@@ -381,38 +367,7 @@ export function Header({
                           Histórico de Pedidos
                       </Button>
                       
-                      <Button
-                        variant="contained"
-                        sx={
-                            {
-                              display: 'flex',
-                              textTransform: "none",
-                              backgroundColor: theme.foodExplorer.tints.tomato[100],
-                              color: theme.foodExplorer.light[100],
-                              width: 'calc(416px + 0.5vw)',
-                              margin: '24px auto',
-                              padding: '12px 36px',
-                              fontSize: '1rem',
-                            }
-                        }
-                        onClick={() => alert('Funcionalidade em desenvolvimento!')}
-                    >
-                      <div
-                        style={
-                          {
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            gap: '8px',
-                          }
-                        }
-                      >
-                        <ReceiptLong />
-                        <span>Pedido ({orderList})</span>
-                      </div>
-                    </Button>
-
-                    <LogoutIcon
+                      <LogoutIcon
                         className='LogoutIcon'
                         cursor='pointer'
                         onClick={handleSignOut}

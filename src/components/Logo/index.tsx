@@ -3,7 +3,7 @@ import { SxProps } from '@mui/material/styles';
 
 type LogoProps = {
   company: {
-    name: string;
+    name?: string;
     logoUrl: string;
     width: number;
     height: number;

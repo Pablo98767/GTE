@@ -9,8 +9,8 @@ export default createGlobalStyle`
     }
     
     body {
-            background-color: ${({ theme }) => theme.foodExplorer.dark[400]};
-            color: ${({ theme }) => theme.foodExplorer.light[100]};
+            background-color: ${({ theme }) => theme.gte_platform.dark[400]};
+            color: ${({ theme }) => theme.gte_platform.light[100]};
             /* overflow: hidden; */
 
             -webkit-font-smoothing: antialiased;
@@ -27,8 +27,8 @@ export default createGlobalStyle`
     }
     
     footer {
-        background-color: ${({ theme }) => theme.foodExplorer.dark[600]};
-        color: ${({ theme }) => theme.foodExplorer.light[200]};
+        background-color: ${({ theme }) => theme.gte_platform.dark[600]};
+        color: ${({ theme }) => theme.gte_platform.light[200]};
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,19 +45,19 @@ export default createGlobalStyle`
     }     */
 
     button {
-        background-color: ${({ theme }) => theme.foodExplorer.tints.tomato[100]};
-        color: ${({ theme }) => theme.foodExplorer.light[100]};
+        background-color: ${({ theme }) => theme.gte_platform.tints.gold[100]};
+        color: ${({ theme }) => theme.gte_platform.light[100]};
     }
 
     input {
-        background-color: ${({ theme }) => theme.foodExplorer.dark[900]};
-        color: ${({ theme }) => theme.foodExplorer.light[100]};
+        background-color: ${({ theme }) => theme.gte_platform.dark[900]};
+        color: ${({ theme }) => theme.gte_platform.light[100]};
     }
 
     @media screen and (min-width: 768px) {
         body {
-            background-color: ${({ theme }) => theme.foodExplorer.dark[400]};
-            color: ${({ theme }) => theme.foodExplorer.light[100]};
+            background-color: ${({ theme }) => theme.gte_platform.dark[400]};
+            color: ${({ theme }) => theme.gte_platform.light[100]};
             /* overflow: hidden; */
 
             -webkit-font-smoothing: antialiased;
@@ -83,8 +83,8 @@ export default createGlobalStyle`
         }
             
         button {
-            background-color: ${({ theme }) => theme.foodExplorer.tints.tomato[100]};
-            color: ${({ theme }) => theme.foodExplorer.light[100]};
+            background-color: ${({ theme }) => theme.gte_platform.tints.gold[100]};
+            color: ${({ theme }) => theme.gte_platform.light[100]};
         }
 
         .SideBar {

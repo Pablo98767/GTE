@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background-color:#FFFFF;
+  background-color: ${({ theme }) => theme.gte_platform.light[100]};
 `;
 
 export const Content = styled.div`
@@ -49,7 +49,7 @@ export const FormCard = styled.div`
 
   width: 100%;
   height: auto;
-  background-color:#FFFFF;
+  background-color: #FFFFFF;
 
   @media screen and (min-width: 768px) {
     background: none;
@@ -80,7 +80,7 @@ export const Form = styled.form`
   @media screen and (min-width: 768px) {
     margin-top: 0.5rem;
     padding: 2.4rem;
-    background: ${({ theme }) => theme.foodExplorer.dark[700]};
+    background: ${({ theme }) => theme.gte_platform.dark[700]};
     border-radius: 8px;
 
     width: 40vw;

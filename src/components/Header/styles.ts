@@ -6,7 +6,7 @@ export const Container = styled(MuiContainer)`
   max-width: 100%;
   height: 114px;
   transition: margin 0.4s;
-  background-color: ${({ theme }) => theme.foodExplorer.dark[700]};
+  background-color: ${({ theme }) => theme.gte_platform.dark[700]};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,9 +68,9 @@ export const Content = styled.div`
         padding: 2px;
         border-radius: 16px;
 
-        border: 2px solid ${({ theme }) => theme.foodExplorer.light[500]};
+        border: 2px solid ${({ theme }) => theme.gte_platform.light[500]};
 
-        background-color: ${({ theme }) => theme.foodExplorer.tints.tomato[100]};
+        background-color: ${({ theme }) => theme.gte_platform.tints.gold[100]};
       }
     }
 
@@ -103,9 +103,9 @@ export const Content = styled.div`
           padding: 2px;
           border-radius: 16px;
 
-          border: 2px solid ${({ theme }) => theme.foodExplorer.light[500]};
+          border: 2px solid ${({ theme }) => theme.gte_platform.light[500]};
 
-          background-color: ${({ theme }) => theme.foodExplorer.tints.tomato[100]};
+          background-color: ${({ theme }) => theme.gte_platform.tints.gold[100]};
         }
       }
 
@@ -150,7 +150,7 @@ export const Profile = styled.div`
   gap: 8px;
 
   > button {
-    color: ${({ theme }) => theme.foodExplorer.light[300]};
+    color: ${({ theme }) => theme.gte_platform.light[300]};
     font-size: large;
   }
 
@@ -163,7 +163,7 @@ export const Profile = styled.div`
 `;
 
 export const PopperContent = styled.div`
-  background-color: ${({ theme }) => theme.foodExplorer.dark[1000]};
+  background-color: ${({ theme }) => theme.gte_platform.dark[1000]};
   padding: 1rem;
   margin: 1rem 2rem 0 0;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -176,7 +176,7 @@ export const PopperContent = styled.div`
 export const HeaderPopperContent = styled.div`
   display: flex;
   justify-content: center;
-  border-bottom: 2px ${({ theme }) => theme.foodExplorer.dark[400]} solid;
+  border-bottom: 2px ${({ theme }) => theme.gte_platform.dark[400]} solid;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   font-weight: bold;

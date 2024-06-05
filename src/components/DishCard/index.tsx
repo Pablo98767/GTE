@@ -55,7 +55,7 @@ export function DishCard({ props }: DishCardProps) {
                     borderRadius: '8px',
                     width: '55vw',
                     maxWidth: '250px',
-                    backgroundColor: theme.foodExplorer.dark[200],
+                    backgroundColor: theme.gte_platform.dark[200],
                 }
             }
         >
@@ -68,7 +68,7 @@ export function DishCard({ props }: DishCardProps) {
                                 position: 'absolute',
                                 top: '0',
                                 right: '0',
-                                color: theme.foodExplorer.light[100],
+                                color: theme.gte_platform.light[100],
                             }
                         }
                         onClick={() => navigate(`/edit-dish/${props.dishId}`)}
@@ -97,7 +97,7 @@ export function DishCard({ props }: DishCardProps) {
                                         top: '0',
                                         right: '0',
                                         margin: '16px',
-                                        color: theme.foodExplorer.tints.tomato[100],
+                                        color: theme.gte_platform.tints.gold[100],
                                         fontSize: '2rem',
                                     }
                                 }
@@ -112,7 +112,7 @@ export function DishCard({ props }: DishCardProps) {
                                         top: '0',
                                         right: '0',
                                         margin: '16px',
-                                        color: theme.foodExplorer.light[100],
+                                        color: theme.gte_platform.light[100],
                                         fontSize: '2rem',
                                     }
                                 }
@@ -151,7 +151,7 @@ export function DishCard({ props }: DishCardProps) {
                     display: 'flex',
                     justifyContent: 'center',
                     width: '100%',
-                    color: theme.foodExplorer.light[300],
+                    color: theme.gte_platform.light[300],
                 }
             }
             onClick={() => navigate(`/dish/${props.dishId}`)}
@@ -166,7 +166,7 @@ export function DishCard({ props }: DishCardProps) {
             {
                 display: 'flex',
                 justifyContent: 'center',
-                color: theme.foodExplorer.tints.cake[200],
+                color: theme.gte_platform.tints.cake[200],
             }
             }
         >
@@ -186,7 +186,7 @@ export function DishCard({ props }: DishCardProps) {
             <Button
                 sx={
                     {
-                        color: theme.foodExplorer.light[300],
+                        color: theme.gte_platform.light[300],
                         fontSize: '3rem',
                     }
                 }
@@ -200,7 +200,7 @@ export function DishCard({ props }: DishCardProps) {
                 component="div"
                 sx={
                     {
-                        color: theme.foodExplorer.light[300],
+                        color: theme.gte_platform.light[300],
                     }
                 }
             >
@@ -209,7 +209,7 @@ export function DishCard({ props }: DishCardProps) {
             <Button
                 sx={
                     {
-                        color: theme.foodExplorer.light[300],
+                        color: theme.gte_platform.light[300],
                         fontSize: '3rem',
                     }
                 }
@@ -226,8 +226,8 @@ export function DishCard({ props }: DishCardProps) {
                 {
                     display: `${props.hasPermission ? 'none' : 'flex'}`,
                     textTransform: "none",
-                    backgroundColor: theme.foodExplorer.tints.tomato[100],
-                    color: theme.foodExplorer.light[100],
+                    backgroundColor: theme.gte_platform.tints.gold[100],
+                    color: theme.gte_platform.light[100],
                     width: '100%',
                     margin: '16px 24px 24px',
                 }

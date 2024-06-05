@@ -18,7 +18,6 @@ export function Login() {
   const navigate = useNavigate();
 
   const company = {
-    name: 'GTE',
     logoUrl: logo,
     width: 200,
     height: 200,
@@ -55,9 +54,7 @@ export function Login() {
   });
 
   return (
-    <S.Container   style={{
-      backgroundColor: theme.foodExplorer.light[100],
-    }}>
+    <S.Container>
       <S.Content>
         <S.BrandCard>
           <Brand
@@ -73,20 +70,20 @@ export function Login() {
 
              />
         </S.BrandCard>
-        <h1 style={{marginLeft:-450, color: theme.foodExplorer.dark[100]}}> O melhor App para gestão de transporte escolar.</h1>
+        <h1 style={{marginLeft:-450, color: theme.gte_platform.dark[100]}}> O melhor App para gestão de transporte escolar.</h1>
         <S.FormCard   style={{
-                backgroundColor: theme.foodExplorer.tints.tomato[300],
+                backgroundColor: theme.gte_platform.tints.gold[300],
               }}>
           <S.Form 
             onSubmit={formik.handleSubmit}
              style={{
-                backgroundColor: theme.foodExplorer.tints.tomato[300],
+                backgroundColor: theme.gte_platform.tints.gold[300],
             }}>
             
           
             <h1
               style={{
-                color: theme.foodExplorer.light[100],
+                color: theme.gte_platform.light[700],
                 fontSize: 32,
                 fontWeight: 500,
                 marginBottom: 24,
@@ -123,7 +120,8 @@ export function Login() {
               variant="contained"
               type="submit"
               style={{
-                backgroundColor: theme.foodExplorer.tints.tomato[300],
+                color: theme.gte_platform.light[700],
+                backgroundColor: theme.gte_platform.tints.gold[400],
                 textTransform: 'none',
               }}
             >
@@ -131,11 +129,11 @@ export function Login() {
             </Button>
             <Button
               fullWidth
-              size="small"
+              size="large"
               variant="text"
               onClick={() => navigate('/signup')}
               style={{
-                color: theme.foodExplorer.light[100],
+                color: theme.gte_platform.light[700],
                 textTransform: 'none',
               }}
             >

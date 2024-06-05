@@ -35,7 +35,7 @@ export function Menu(props: MenuProps) {
               className='MenuImage'
               onClick={props.menuProps.onClickMenu}
               cursor='pointer'
-              style={{ border: `2px solid ${theme.foodExplorer.light[700]}`}}
+              style={{ border: `2px solid ${theme.gte_platform.light[700]}`}}
             />
           </S.Content>
         )

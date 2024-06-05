@@ -14,7 +14,7 @@ export const Container = styled.section`
         padding-bottom: 16px;
         margin-bottom: 24px;
 
-        color: ${({ theme }) => theme.foodExplorer.light[100]};
+        color: ${({ theme }) => theme.gte_platform.light[100]};
         font-size: 20px;
         font-weight: 400;
 

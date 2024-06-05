@@ -4,7 +4,7 @@ import { createTheme } from '@mui/material/styles';
 
 declare module '@mui/material/styles' {
   interface Theme {
-    foodExplorer: {
+    gte_platform: {
       light: {
         100: string;
         200: string;
@@ -27,11 +27,12 @@ declare module '@mui/material/styles' {
         1000: string;
       },
       tints: {
-        tomato: {
+        gold: {
           100: string;
           200: string;
           300: string;
           400: string;
+          500: string;
         },
         carrot: {
           100: string;
@@ -48,7 +49,7 @@ declare module '@mui/material/styles' {
   }
   
   interface ThemeOptions {
-    foodExplorer?: {
+    gte_platform?: {
       light?: {
         100: string;
         200: string;
@@ -71,11 +72,12 @@ declare module '@mui/material/styles' {
         1000: string;
       },
       tints: {
-        tomato: {
+        gold: {
           100: string;
           200: string;
           300: string;
           400: string;
+          500: string;
         },
         carrot: {
           100: string;
@@ -93,10 +95,10 @@ declare module '@mui/material/styles' {
 }
 
 const theme = createTheme({
-  foodExplorer: {
+  gte_platform: {
     light: {
       100: '#FFFFFF',
-      200: '#FFF9C4',
+      200: '#F5F5F5',
       300: '#E1E1E6',
       400: '#C4C4CC',
       500: '#7C7C8A',
@@ -116,11 +118,12 @@ const theme = createTheme({
       1000: '#192227',
     },
     tints: {
-      tomato: {
-        100: '#FFD600',  // Amarelo do ônibus escolar
-        200: '#FFEA00',  // Amarelo claro do ônibus escolar
-        300: '#FFC400',  // Amarelo intenso do ônibus escolar
-        400: '#FFAB00',  // Amarelo alaranjado
+      gold: {
+        100: '#FFF9C4',
+        200: '#FFD600',  // Amarelo do ônibus escolar
+        300: '#FFEA00',  // Amarelo claro do ônibus escolar
+        400: '#FFC400',  // Amarelo intenso do ônibus escolar
+        500: '#FFAB00',  // Amarelo alaranjado
       },
       carrot: {
         100: '#FBA94C',

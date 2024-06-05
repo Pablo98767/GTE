@@ -5,7 +5,7 @@ import { SxProps } from '@mui/material/styles';
 
 type BrandProps = {
   company: {
-    name: string;
+    name?: string;
     logoUrl: string;
     width: number;
     height: number;

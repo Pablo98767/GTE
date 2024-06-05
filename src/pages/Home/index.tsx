@@ -71,20 +71,16 @@ export function Home() {
       {
         title: 'Bem vindo!',
         intro:
-          'Seja bem vindo ao<br><br>Sistema Digital de Gerenciamento de Restaurantes desenvolvido por Jonas Augusto Kunzler. 👋',
-      },
-      {
-        intro:
-          '<iframe width="260" height="315" src="https://www.youtube.com/embed/qhNjQDkY6Kg" title="OMG! Onde Está Minha Dama? GAMEPLAY DE XADREZ - GTI/FPM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+          'Seja bem vindo ao<br><br>Sistema Digital de Gestão de Transporte Escolar. 👋',
       },
       {
         element: 'header',
-        intro: 'Diversas funcionalidades para você aumentar a produtividade.',
+        intro: 'Diversas funcionalidades para você acompanhar as atividades do seu filho.',
       },
       {
         title: 'Desembarque',
         intro:
-          'Chegamos ao ponto final desta estapa.<br><br>Obrigado por me acompanhar até aqui!',
+          'Chegamos ao ponto final desta etapa.<br><br>Obrigado por me acompanhar até aqui!',
       },
     ],
     hintsEnabled: false,

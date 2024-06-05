@@ -24,7 +24,6 @@ export function SignUp() {
   const navigate = useNavigate();
 
   const company = {
-    name: 'foodExplorer',
     logoUrl: logo,
     width: 50,
     height: 50,
@@ -85,16 +84,13 @@ export function SignUp() {
   return (
     <S.Container >
       <S.Content>
-        <S.BrandCard >
-          <Brand style={{ fontSize: 37.243 }} company={ company } />
-        </S.BrandCard>
         <S.FormCard >
           <S.Form
             onSubmit={formik.handleSubmit}
           >
             <h1
               style={{
-                color: theme.foodExplorer.light[100],
+                color: theme.gte_platform.light[100],
                 fontSize: 32,
                 fontWeight: 500,
                 marginBottom: 24,
@@ -157,7 +153,8 @@ export function SignUp() {
               type="submit"
               style={
                 { 
-                  backgroundColor: theme.foodExplorer.tints.tomato[100], 
+                  color: theme.gte_platform.light[700],
+                  backgroundColor: theme.gte_platform.tints.gold[400], 
                   textTransform: 'none',
                 }
               }
@@ -166,12 +163,12 @@ export function SignUp() {
             </Button>
             <Button
               fullWidth
-              size="small"
+              size="large"
               variant="text"
               onClick={() => navigate('/')}
               style={
                 { 
-                  color: theme.foodExplorer.light[100],
+                  color: theme.gte_platform.light[100],
                   textTransform: 'none',
                 }}
             >

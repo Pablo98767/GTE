@@ -39,7 +39,7 @@ export function Search(props: SearchProps) {
               sx={
                 { 
                   ml: 1, 
-                  color: theme.foodExplorer.light[400]
+                  color: theme.gte_platform.light[400]
                 }
               }
             />

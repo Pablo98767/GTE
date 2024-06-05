@@ -44,7 +44,7 @@ export const BrandCard = styled.div`
       margin-top: 0.6rem;
       margin-right: 0.5rem;
       padding: 12rem 5.3rem;
-      background: ${({ theme }) => theme.foodExplorer.dark[400]};
+      background: ${({ theme }) => theme.gte_platform.dark[400]};
       border-radius: 16px;
     }
   }
@@ -85,7 +85,7 @@ export const Form = styled.form`
   }
 
   @media screen and (min-width: 768px) {
-    background: ${({ theme }) => theme.foodExplorer.dark[700]};
+    background: ${({ theme }) => theme.gte_platform.dark[700]};
     border-radius: 16px;
     margin-top: 0.5rem;
     padding: 2.4rem;
