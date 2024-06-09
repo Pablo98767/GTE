@@ -148,7 +148,12 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
         icon: <HomeRounded />,
         navigateTo: '/',
       },
-     
+      
+      {
+        title: 'Alunos',
+        icon: <GroupIcon />,
+        navigateTo: '/users',
+      },
   
       {
         title: 'Sair',
