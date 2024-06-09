@@ -150,9 +150,15 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
       },
       
       {
-        title: 'Alunos',
+        title: 'Lista de Alunos',
         icon: <GroupIcon />,
         navigateTo: '/users',
+      },
+
+      {
+        title: 'Registrar Aluno',
+        icon: <GroupIcon />,
+        navigateTo: '/register-user',
       },
   
       {
