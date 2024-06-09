@@ -148,26 +148,8 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
         icon: <HomeRounded />,
         navigateTo: '/',
       },
-      {
-        title: 'Meus Favoritos',
-        icon: <ThumbUpAltIcon />,
-        navigateTo: '/favorites',
-      },
-      {
-        title: 'Meus Pedidos',
-        icon: <ListAltIcon />,
-        navigateTo: '/orders',
-      },
-      {
-        title: 'Calendário',
-        icon: <CalendarMonthIcon />,
-        navigateTo: '/calendar',
-      },
-      {
-        title: 'Blog',
-        icon: <BookIcon />,
-        navigateTo: 'https://github.com/jakunzler',
-      },
+     
+  
       {
         title: 'Sair',
         icon: <LogoutIcon />,
