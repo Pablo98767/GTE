@@ -10,13 +10,9 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import SettingsIcon from '@mui/icons-material/Settings';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import BookIcon from '@mui/icons-material/Book';
 import GroupIcon from '@mui/icons-material/Group';
-import RestaurantIcon from '@mui/icons-material/Restaurant';
 import HomeRounded from '@mui/icons-material/HomeRounded';
-import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
-import ListAltIcon from '@mui/icons-material/ListAlt';
+
 
 import * as S from './styles';
 
