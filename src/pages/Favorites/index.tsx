@@ -35,22 +35,22 @@ export function Favorites() {
   const [isStartTour, setIsStartTour] = useState<boolean>(false);
   // const [categories, setCategories] = useState<Utils.categoryProps[]>(
   //   JSON.parse(
-  //     localStorage.getItem('@food-explorer-backend:categories')
-  //       ? (localStorage.getItem('@food-explorer-backend:categories') as string)
+  //     localStorage.getItem('@gte-platform-backend:categories')
+  //       ? (localStorage.getItem('@gte-platform-backend:categories') as string)
   //       : '[]'
   //   )
   // );
   const dishes = (
     JSON.parse(
-      localStorage.getItem('@food-explorer-backend:dishes')
-      ? (localStorage.getItem('@food-explorer-backend:dishes') as string)
+      localStorage.getItem('@gte-platform-backend:dishes')
+      ? (localStorage.getItem('@gte-platform-backend:dishes') as string)
         : '[]'
     )
   );
   // const [openOrder, setOpenOrder] = useState<Utils.openOrderProps[]>(
   //   JSON.parse(
-  //     localStorage.getItem('@food-explorer-backend:openOrder')
-  //   ? (localStorage.getItem('@food-explorer-backend:openOrder') as string)
+  //     localStorage.getItem('@gte-platform-backend:openOrder')
+  //   ? (localStorage.getItem('@gte-platform-backend:openOrder') as string)
   //       : '[]'
   //   )
   // );
@@ -116,7 +116,7 @@ export function Favorites() {
         }
         api.patch(`favorite/`, values).then(() => {
           setFavorites(remainingFavorites)
-          localStorage.setItem('@food-explorer-backend:favorites', JSON.stringify(remainingFavorites))
+          localStorage.setItem('@gte-platform-backend:favorites', JSON.stringify(remainingFavorites))
         }).catch((error) => {
           console.error(error)
           alert("Não foi possível realizar operação")
@@ -131,7 +131,7 @@ export function Favorites() {
         }
         api.patch(`favorite/`, values).then(() => {
           setFavorites([...favorites, addFavorite])
-          localStorage.setItem('@food-explorer-backend:favorites', JSON.stringify([...favorites, addFavorite]))
+          localStorage.setItem('@gte-platform-backend:favorites', JSON.stringify([...favorites, addFavorite]))
         }).catch((error) => {
           console.error(error)
           alert("Não foi possível realizar operação")
@@ -142,8 +142,8 @@ export function Favorites() {
 
   useEffect(() => {
     const userFavorites = JSON.parse(
-      localStorage.getItem('@food-explorer-backend:favorites')
-        ? (localStorage.getItem('@food-explorer-backend:favorites') as string)
+      localStorage.getItem('@gte-platform-backend:favorites')
+        ? (localStorage.getItem('@gte-platform-backend:favorites') as string)
         : '[]'
     );
     if (userFavorites) {

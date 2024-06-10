@@ -128,7 +128,7 @@ export function Profile() {
     validationSchema: validationSchema,
     onSubmit: async (values: Utils.updateUserProps["userProfile"]) => {
       try {
-        const user = localStorage.getItem('@food-explorer-backend:user');
+        const user = localStorage.getItem('@gte-platform-backend:user');
         if (user) {
           const userInfo = JSON.parse(user);
           const newUserInfo: Utils.updateUserProps["userProfile"] = {};

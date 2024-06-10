@@ -23,10 +23,9 @@ export function RegisterUser() {
   const navigate = useNavigate();
 
   const company = {
-    name: 'gte_platform',
     logoUrl: logo,
-    width: 50,
-    height: 50,
+    width: 450,
+    height: 450,
   };
 
   const validationSchema = yup.object({
@@ -156,7 +155,8 @@ export function RegisterUser() {
               type="submit"
               style={
                 { 
-                  backgroundColor: theme.gte_platform.tints.gold[100], 
+                  color: theme.gte_platform.light[700],
+                  backgroundColor: theme.gte_platform.tints.gold[400], 
                   textTransform: 'none',
                 }
               }
@@ -165,7 +165,7 @@ export function RegisterUser() {
             </Button>
             <Button
               fullWidth
-              size="small"
+              size="large"
               variant="text"
               onClick={() => navigate('/')}
               style={

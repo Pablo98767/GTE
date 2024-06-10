@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: stretch;
   justify-content: center;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 `;
 
 export const Content = styled.div`
@@ -75,7 +75,7 @@ export const FormCard = styled.div`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
 
   margin-top: 4.5rem;

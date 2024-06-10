@@ -43,23 +43,23 @@ export function Home() {
   const [isStartTour, setIsStartTour] = useState<boolean>(false);
   const [categories, setCategories] = useState<Utils.categoryProps[]>(
     JSON.parse(
-      localStorage.getItem('@food-explorer-backend:categories')
-        ? (localStorage.getItem('@food-explorer-backend:categories') as string)
+      localStorage.getItem('@gte-platform-backend:categories')
+        ? (localStorage.getItem('@gte-platform-backend:categories') as string)
         : '[]'
     )
   );
   const dishes = (
     JSON.parse(
-      localStorage.getItem('@food-explorer-backend:dishes')
-      ? (localStorage.getItem('@food-explorer-backend:dishes') as string)
+      localStorage.getItem('@gte-platform-backend:dishes')
+      ? (localStorage.getItem('@gte-platform-backend:dishes') as string)
         : '[]'
     )
   );
   
   const [openOrder, setOpenOrder] = useState<Utils.openOrderProps[]>(
     JSON.parse(
-      localStorage.getItem('@food-explorer-backend:openOrder')
-    ? (localStorage.getItem('@food-explorer-backend:openOrder') as string)
+      localStorage.getItem('@gte-platform-backend:openOrder')
+    ? (localStorage.getItem('@gte-platform-backend:openOrder') as string)
         : '[]'
     )
   );
@@ -119,7 +119,7 @@ export function Home() {
       ]);
 
       JSON.stringify(
-        localStorage.setItem('@food-explorer-backend:openOrder',
+        localStorage.setItem('@gte-platform-backend:openOrder',
         JSON.stringify([
           ...openOrder,
           {
@@ -138,7 +138,7 @@ export function Home() {
       ]);
 
       JSON.stringify(
-        localStorage.setItem('@food-explorer-backend:openOrder',
+        localStorage.setItem('@gte-platform-backend:openOrder',
         JSON.stringify([
           openOrder,
           {
@@ -154,7 +154,7 @@ export function Home() {
     api.get('category/')
    .then((response) => {
         setCategories(response.data);
-        localStorage.setItem('@food-explorer-backend:categories', JSON.stringify(response.data));
+        localStorage.setItem('@gte-platform-backend:categories', JSON.stringify(response.data));
       })
   }, []);
 
@@ -289,17 +289,6 @@ export function Home() {
                             <SwiperSlide
                               key={index}
                             >
-                              <DishCard
-                                key={index}
-                                props={{
-                                  hasPermission: hasPermission,
-                                  dishId: item?.dish.id,
-                                  dishName: item?.dish.name,
-                                  dishPrice: item?.dish.price,
-                                  dishImage: item?.dish.image ? `${api.defaults.baseURL}/files/${item.dish.image}` : logo,
-                                  onClickIncludeOrder: handleClickIncludeOrder,
-                                }}
-                              />
                             </SwiperSlide>
                           )
                         })

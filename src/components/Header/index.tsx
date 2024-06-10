@@ -2,7 +2,6 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import HomeRounded from '@mui/icons-material/HomeRounded';
-import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
 
 import logo from '@/assets/images/bus_image.jpeg';
 
@@ -49,8 +48,8 @@ export function Header({
   const navigate = useNavigate();
   const openOrder: openOrderProps[] = 
     JSON.parse(
-      localStorage.getItem('@food-explorer-backend:openOrder')
-    ? (localStorage.getItem('@food-explorer-backend:openOrder') as string)
+      localStorage.getItem('@gte-platform-backend:openOrder')
+    ? (localStorage.getItem('@gte-platform-backend:openOrder') as string)
         : '[]'
     )
   const orderQuantity = Array.isArray(openOrder)
