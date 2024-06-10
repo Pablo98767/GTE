@@ -128,10 +128,11 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
       },
 
       {
-        title: 'Lista de Alunos',
+        title: 'Registrar Aluno',
         icon: <GroupIcon />,
-        navigateTo: '/users',
+        navigateTo: '/register-user',
       },
+      
       {
         title: 'Sair',
         icon: <LogoutIcon />,
@@ -146,16 +147,12 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
       },
       
       {
-        title: 'Lista de Alunos',
-        icon: <GroupIcon />,
-        navigateTo: '/users',
-      },
-
-      {
         title: 'Registrar Aluno',
         icon: <GroupIcon />,
         navigateTo: '/register-user',
       },
+
+    
   
       {
         title: 'Sair',

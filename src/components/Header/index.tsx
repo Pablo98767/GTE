@@ -2,7 +2,6 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import HomeRounded from '@mui/icons-material/HomeRounded';
-import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
 
 import logo from '@/assets/images/bus_image.jpeg';
 

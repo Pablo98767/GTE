@@ -3,7 +3,7 @@ import { Button } from '@mui/material';
 
 export const StyledButton = styled(Button)({
   '&.MuiButtonBase-root': {
-    backgroundColor: '#82BC00',
+    backgroundColor: '#ffff00',
     color: '#fff',
     border: '1px solid transparent',
     borderRadius: '5px',
