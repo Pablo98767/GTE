@@ -156,6 +156,12 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
         icon: <GroupIcon />,
         navigateTo: '/register-user',
       },
+
+      {
+        title: 'Rotas',
+        icon: <GroupIcon />,
+        navigateTo: '/register-user',
+      },
   
       {
         title: 'Sair',

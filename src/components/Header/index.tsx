@@ -259,7 +259,7 @@ export function Header({
                           }
                           onClick={() => navigate(`/favorites`)}
                       >
-                          Meus Favoritos
+                          Notificações
                       </Button>
 
                       <Button
