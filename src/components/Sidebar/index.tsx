@@ -171,6 +171,12 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
         icon: <HomeRounded />,
         navigateTo: '/',
       },
+
+      {
+        title: 'Histórico de Rotas',
+        icon: <HomeRounded />,
+        navigateTo: '/',
+      },
     
       {
         title: 'Rota em Tempo Real',
