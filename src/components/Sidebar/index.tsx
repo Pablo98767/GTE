@@ -128,10 +128,18 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
       },
 
       {
-        title: 'Lista de Alunos',
+        title: 'Registrar aluno',
         icon: <GroupIcon />,
-        navigateTo: '/users',
+        navigateTo: '/register-user',
       },
+
+      {
+        title: 'Registrar motorista',
+        icon: <GroupIcon />,
+        navigateTo: '/register-user',
+      },
+
+   
       {
         title: 'Sair',
         icon: <LogoutIcon />,
@@ -140,27 +148,27 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
     ]
   : [
       {
-        title: 'Home',
+        title: 'HomeStudent',
         icon: <HomeRounded />,
         navigateTo: '/',
       },
-      
-      {
-        title: 'Lista de Alunos',
-        icon: <GroupIcon />,
-        navigateTo: '/users',
-      },
 
       {
-        title: 'Registrar Aluno',
+        title: 'Carterinha escolar',
         icon: <GroupIcon />,
-        navigateTo: '/register-user',
+        navigateTo: '/',
+        
+        
       },
+  
+      
 
       {
         title: 'Rotas',
         icon: <GroupIcon />,
-        navigateTo: '/register-user',
+        navigateTo: '/',
+        
+        
       },
   
       {

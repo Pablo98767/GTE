@@ -5,8 +5,8 @@ import { Favorites } from '@/pages/Favorites';
 import { Profile } from '@/pages/Profile';
 import { Calendar } from '@/pages/Calendar';
 import { Settings } from '@/pages/Settings';
-
 import { NoMatch } from '@/pages/NoMatch';
+
 
 export function AppRoutesUser() {
   return (
@@ -16,7 +16,7 @@ export function AppRoutesUser() {
       <Route path="/profile" element={<Profile />} />
       <Route path="/calendar" element={<Calendar />} />
       <Route path="/settings" element={<Settings />} />
-
+    
       <Route path="*" element={<NoMatch />} />
     </Routes>
   );

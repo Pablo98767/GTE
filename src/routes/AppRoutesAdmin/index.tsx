@@ -18,6 +18,7 @@ export function AppRoutesAdmin() {
       <Route path="/calendar" element={<Calendar />} />
       <Route path="/register-user" element={<RegisterUser />} />
       <Route path="/settings" element={<Settings />} />
+     
 
       <Route path="*" element={<NoMatch />} />
     </Routes>

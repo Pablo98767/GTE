@@ -11,7 +11,7 @@ export function Routes() {
   if (user.email) {
     admin_auth = user.permissionGroup?.role === 'IS_ADMIN';
   }
-
+  console.log(admin_auth)
   return (
     <BrowserRouter>
       {user.token ? (
