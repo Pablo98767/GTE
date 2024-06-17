@@ -171,6 +171,7 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
         icon: <HomeRounded />,
         navigateTo: '/',
       },
+    
       {
         title: 'Rota em Tempo Real',
         icon: <HomeRounded />,
@@ -185,7 +186,7 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
 
 
       
-        
+
       },
 
       {
