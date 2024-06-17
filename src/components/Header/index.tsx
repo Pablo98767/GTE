@@ -229,7 +229,7 @@ export function Header({
                         <span
                           style={
                             {
-                              color: '#fff',
+                              color: '#Ffc222',
                               fontSize: '0.8rem'
                             }
                           }
@@ -284,7 +284,7 @@ export function Header({
                             {
                               textTransform: "none",
                               backgroundColor: theme.gte_platform.tints.gold[100],
-                              color: theme.gte_platform.light[100],
+                              color: theme.gte_platform.light[500],
                               width: 'calc(316px + 0.5vw)',
                               margin: '24px auto',
                               padding: '12px 36px',
@@ -304,7 +304,7 @@ export function Header({
                         }
                       >
                         <ReceiptLong />
-                        <span>Pedidos ({orderList})</span>
+                        <span>Reclamações</span>
                       </div>
                       </Button>
                       

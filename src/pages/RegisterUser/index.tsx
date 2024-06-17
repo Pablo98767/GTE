@@ -23,7 +23,7 @@ export function RegisterUser() {
   const navigate = useNavigate();
 
   const company = {
-    name: 'gte_platform',
+    name: 'GTE PLATFORM',
     logoUrl: logo,
     width: 50,
     height: 50,

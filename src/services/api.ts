@@ -6,7 +6,7 @@ let api: AxiosInstance;
 if (environment === 'dev') {
   /* Dev */
   api = axios.create({
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://localhost:3004',
   });
 } else if (environment === 'prod') {
   /* Prod */

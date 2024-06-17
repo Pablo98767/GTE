@@ -10,9 +10,12 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import SettingsIcon from '@mui/icons-material/Settings';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import BookIcon from '@mui/icons-material/Book';
 import GroupIcon from '@mui/icons-material/Group';
 import HomeRounded from '@mui/icons-material/HomeRounded';
-
+import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+import ListAltIcon from '@mui/icons-material/ListAlt';
 
 import * as S from './styles';
 
@@ -127,27 +130,29 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
         navigateTo: '/',
       },
 
+
       {
-<<<<<<< HEAD
-        title: 'Registrar aluno',
+        title: 'Histórico de Rotas',
+        icon: <HomeRounded />,
+        navigateTo: '/',
+      },
+
+      {
+        title: 'Rota em Tempo Real',
+        icon: <HomeRounded />,
+        navigateTo: '/',
+      },
+      {
+        title: 'Registrar Alunos',
+        icon: <GroupIcon />,
+        navigateTo: '/register-user',
+      },
+      {
+        title: 'Registrar Motorista',
         icon: <GroupIcon />,
         navigateTo: '/register-user',
       },
 
-      {
-        title: 'Registrar motorista',
-        icon: <GroupIcon />,
-        navigateTo: '/register-user',
-      },
-
-   
-=======
-        title: 'Registrar Aluno',
-        icon: <GroupIcon />,
-        navigateTo: '/register-user',
-      },
-      
->>>>>>> cb6d32702cd98ee579278406dc627b5245a7114d
       {
         title: 'Sair',
         icon: <LogoutIcon />,
@@ -156,37 +161,33 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
     ]
   : [
       {
-        title: 'HomeStudent',
+        title: 'Home',
         icon: <HomeRounded />,
         navigateTo: '/',
       },
-<<<<<<< HEAD
 
       {
-        title: 'Carterinha escolar',
-=======
-      
-      {
-        title: 'Registrar Aluno',
->>>>>>> cb6d32702cd98ee579278406dc627b5245a7114d
-        icon: <GroupIcon />,
+        title: 'Histórico de Rotas',
+        icon: <HomeRounded />,
         navigateTo: '/',
-        
-        
       },
-  
-      
+      {
+        title: 'Rota em Tempo Real',
+        icon: <HomeRounded />,
+        navigateTo: '/',
+      },
 
       {
-        title: 'Rotas',
-        icon: <GroupIcon />,
+        title: 'Carterinha digital',
+        icon: <HomeRounded />,
         navigateTo: '/',
-        
+
+
+
+      
         
       },
 
-    
-  
       {
         title: 'Sair',
         icon: <LogoutIcon />,
