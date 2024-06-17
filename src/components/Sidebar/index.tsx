@@ -128,6 +128,7 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
       },
 
       {
+<<<<<<< HEAD
         title: 'Registrar aluno',
         icon: <GroupIcon />,
         navigateTo: '/register-user',
@@ -140,6 +141,13 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
       },
 
    
+=======
+        title: 'Registrar Aluno',
+        icon: <GroupIcon />,
+        navigateTo: '/register-user',
+      },
+      
+>>>>>>> cb6d32702cd98ee579278406dc627b5245a7114d
       {
         title: 'Sair',
         icon: <LogoutIcon />,
@@ -152,9 +160,15 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
         icon: <HomeRounded />,
         navigateTo: '/',
       },
+<<<<<<< HEAD
 
       {
         title: 'Carterinha escolar',
+=======
+      
+      {
+        title: 'Registrar Aluno',
+>>>>>>> cb6d32702cd98ee579278406dc627b5245a7114d
         icon: <GroupIcon />,
         navigateTo: '/',
         
@@ -170,6 +184,8 @@ export function Sidebar({ onClickSideBarButton, isOpened, hasPermission }: Sideb
         
         
       },
+
+    
   
       {
         title: 'Sair',

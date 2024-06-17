@@ -45,12 +45,12 @@ export default createGlobalStyle`
     }     */
 
     button {
-        background-color: ${({ theme }) => theme.gte_platform.tints.gold[100]};
+        background-color: ${({ theme }) => theme.gte_platform.tints.gold[600]};
         color: ${({ theme }) => theme.gte_platform.light[100]};
     }
 
     input {
-        background-color: ${({ theme }) => theme.gte_platform.dark[900]};
+        background-color: ${({ theme }) => theme.gte_platform.dark[400]};
         color: ${({ theme }) => theme.gte_platform.light[100]};
     }
 
